@@ -1,0 +1,55 @@
+body{
+    background-color: beige;  
+}
+.container{
+    width: 390px;
+    /* display: flex;
+    justify-content: center; */
+}
+.cover__image{
+    width: 390px;
+    height: 844px;
+}
+.cover__food{
+    width: 100%;
+}
+#lunch-box{
+    width: 85%;
+    height: 200px;
+    background-color: goldenrod;
+    display: flex;
+    padding: 5px;
+}
+#left{
+    width: 55%;
+    height: 100%;
+}
+#main-dish{
+    width: 100%;
+    height: 50%;
+    background-color: darkgoldenrod;
+}
+.main-dish-image{
+    width: 100%;
+}
+#left-bottom{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+#vegi{
+    width: 45%;
+    height: 100%;
+    background-color: chartreuse;
+}
+#side-dish{
+    width: 55%;
+    height:100% ;
+    background-color: darkorange;
+}
+
+#rice{
+    width: 45%;
+    height: 100%;
+    background-color: #fff;
+}
