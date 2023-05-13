@@ -1,16 +1,46 @@
 body{
-    background-color: beige;  
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+header{
+    width: 390px;
+}
+.header-image{
+    width: 390px;
+    position: relative;
+}
+.header-image-title{
+    position: absolute;
+    font-size: 20px;
+    color: coral;
+    top: 2%;
+    left: 32%; 
 }
 .container{
     width: 390px;
-    /* display: flex;
-    justify-content: center; */
 }
-.cover__image{
+.cover-image{
     width: 390px;
-    height: 844px;
+    height: auto;
 }
-.cover__food{
+.cover-food{
+    width: 100%;
+}
+.cover-bottom-image{
+    width: 390px;
+    position: relative;
+}
+.introduction{
+    width: 390px;
+    padding: 15% 0; 
+}
+.introduction-text{
+    font-size: 15px;
+    line-height: 40px;
+    color: coral;
+    text-align: center;
+}
+.generate-area{
     width: 100%;
 }
 #lunch-box{
@@ -18,6 +48,7 @@ body{
     height: 200px;
     background-color: goldenrod;
     display: flex;
+    justify-content:center;
     padding: 5px;
 }
 #left{
@@ -42,14 +73,24 @@ body{
     height: 100%;
     background-color: chartreuse;
 }
+.vegi-image{
+    width: 100%;
+    height: 100%;
+}
 #side-dish{
     width: 55%;
     height:100% ;
     background-color: darkorange;
 }
-
+.side-dish-image{
+    width: 100%;
+    height: 100%;
+}
 #rice{
     width: 45%;
     height: 100%;
     background-color: #fff;
+}
+.rice-image{
+    width: 101%;
 }
