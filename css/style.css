@@ -274,16 +274,12 @@ dl>input:checked+label>dt::after {
     background-size: 100%;
     background-position: center;
     height:600px;
-    font-size: 13px;
+    font-size: 16px;
     color: black;
     font-display:center
 }
 .ingredients-text{
     position: relative;
-    top: 65px;
+    top: 85px;
     left: 45px;
 }
-
-
-
-

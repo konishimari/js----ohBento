@@ -4,7 +4,8 @@ const maindishArr = [
         name: "鶏の唐揚げ",
         image: "./img/food/maindish/karaage2.png",
         calories: "306kcal",
-        ingredients: ["鶏もも肉500g", "生姜", "片栗粉", "醤油", "酒", "レモン", "油"],
+        ingredients: ["鶏もも肉500g", "生姜", "片栗粉", "レモン"],
+        seasoning:["醤油", "酒",, "油" ],
         recipe: [
             "1 鶏肉は一口大に切り、しょうがとにんにくはすりおろしておく。",
             "2 ボウルに鶏肉、しょうが、にんにく、しょうゆ、みりん、酒を入れ、よく混ぜて下味をつける。その後、15分程度冷蔵庫で寝かせる。",
@@ -31,6 +32,7 @@ const maindishArr = [
         image: "./img/food/maindish/shake4.png",
         calories: "137kcal",
         ingredients: ["塩鮭", "青じそ"],
+        seasoning:["none"],
         recipe: [
             "1 塩鮭は魚グリルで焼くか、フライパンフライパンを熱し、中火で皮目を下にして焼く",
             "2 ひっくり返す。",
@@ -55,7 +57,8 @@ const maindishArr = [
         name: "豚の生姜焼き",
         image: "./img/food/maindish/pork2.png",
         calories: " 306kcal",
-        ingredients: ["豚肉薄切り300g", "生姜 1かけ", "しょうが汁 50ml", "しょうゆ 大さじ2", "みりん 大さじ2", "砂糖 大さじ1", "サラダ油 適量"],
+        ingredients: ["豚肉薄切り300g", "生姜 1かけ", "しょうが汁 50ml"],
+        seasoning:[ "しょうゆ 大さじ2", "みりん 大さじ2", "砂糖 大さじ1", "サラダ油 適量"],
         recipe: [
             "1 豚肉を一口大に切り、生姜は皮をむいて薄切りにする。しょうが汁を作っておく。",
             "2 フライパンにサラダ油を熱し、豚肉を入れて中火で焼き色がつくまで炒める。",
@@ -81,7 +84,8 @@ const maindishArr = [
         name: "ハンバーグ",
         image: "./img/food/maindish/hamburg.png",
         calories: " 306kcal",
-        ingredients: ["2人分", "合いびき肉 300g", "玉ねぎ 1/2個", "パン粉 大さじ3", "牛乳 大さじ2", "塩 小さじ1/2", "ケチャップ 大さじ1", "ウスターソース 小さじ1",],
+        ingredients: ["2人分", "合いびき肉 300g", "玉ねぎ 1/2個", "パン粉 大さじ3", "牛乳 大さじ2"],
+        seasoning:["塩 小さじ1/2", "ケチャップ 大さじ1", "ウスターソース 小さじ1"],
         recipe: [
             "1 玉ねぎをみじん切りにして、フライパンで炒めて色が変わるまで炒める。冷ます。",
             "2 ボウルに合いびき肉、パン粉、牛乳、塩、黒こしょう、冷めた玉ねぎを入れてよく混ぜる。",
@@ -107,7 +111,8 @@ const maindishArr = [
         name: "肉野菜炒め",
         image: "./img/food/maindish/meatandvegi2.png",
         calories: " 214kcal",
-        ingredients: ["2人分", "薄切り豚肉 150g", "にんじん 1/2本", "キャベツ 1/8個", "玉ねぎ 1/4個", "もやし100g", "しょうが 1かけ分", "酒 大さじ1", "しょうゆ 小さじ2", "砂糖 小さじ1/2", "サラダ油 適量"],
+        ingredients: ["2人分", "薄切り豚肉 150g", "にんじん 1/2本", "キャベツ 1/8個", "玉ねぎ 1/4個", "もやし100g", "しょうが 1かけ分"],
+        seasoning:["酒 大さじ1", "しょうゆ 小さじ2", "砂糖 小さじ1/2", "サラダ油 適量"],
         recipe: [
             "1 にんじんは皮を剥き、斜めに薄切りにする。キャベツは千切りにする。玉ねぎはくし形に切る。しょうがは千切りにする。",
             "2 フライパンにサラダ油を熱し、しょうがを入れて香りを出す。肉を加えて炒める。肉の色が変わったら、野菜を加えて炒める。",
@@ -137,7 +142,8 @@ const sidedishArr = [
         name: "きんぴらごぼう",
         image: "./img/food/sidedish/kinpira.png",
         calories: "84kcal",
-        ingredients: ["ごぼう 1本", "人参 1/2本", "しょうが 1かけ分", "だし汁 100ml", "砂糖 大さじ1", "醤油 大さじ1", "みりん 大さじ1", "サラダ油 大さじ1"],
+        ingredients: ["ごぼう 1本", "人参 1/2本", "しょうが 1かけ分", "だし汁 100ml"],
+        seasoning:["砂糖 大さじ1", "醤油 大さじ1", "みりん 大さじ1", "サラダ油 大さじ1"],
         recipe: [
             "1 ごぼうは皮をむき、繊維に沿って細切りにし、水にさらす。人参は皮をむき、繊維に沿って細切りにする。しょうがは千切りにする。",
             "2 フライパンにサラダ油を熱し、しょうがを加えて香りを出す。ごぼうと人参を加えて炒める。",
@@ -162,8 +168,8 @@ const sidedishArr = [
         name: "ちくわの照り焼き",
         image: "./img/food/sidedish/chikuwa.png",
         calories: "128kcal",
-        ingredients: ["ちくわ 2本", "しょうゆ 大さじ1", "みりん 大さじ1", "砂糖 大さじ1/2", "水 大さじ1", "サラダ油 大さじ1"],
-
+        ingredients: ["ちくわ 2本"],
+        seasoning:["しょうゆ 大さじ1", "みりん 大さじ1", "砂糖 大さじ1/2", "水 大さじ1", "サラダ油 大さじ1"],
         recipe: [
             "1 ちくわは斜めに切る。",
             "2 フライパンにサラダ油を熱し、ちくわを表面に焼き色がつくまで炒める。",
@@ -188,7 +194,8 @@ const sidedishArr = [
         name: "切り干し大根の煮物",
         image: "./img/food/sidedish/kiriboshi.png",
         calories: "98kcal",
-        ingredients: ["切り干し大根 1袋","にんじん 1本","薄揚げ 2枚","だし汁 400ml","醤油 大さじ2","みりん 大さじ2","砂糖 大さじ1","しょうが 1かけ分"],
+        ingredients: ["切り干し大根 1袋","にんじん 1本","薄揚げ 2枚","だし汁 400ml","しょうが 1かけ分"],
+        seasoning:["醤油 大さじ2","みりん 大さじ2","砂糖 大さじ1"],
         recipe: [
             "1 切り干し大根は水に浸して戻し、軽く絞る。にんじんは皮を剥き、細切りにする。薄揚げは5ミリ幅に切る。しょうがは千切りにする。",
             "2 鍋にだし汁、醤油、みりん、砂糖を入れ、中火で煮立てる。煮立ったら、切り干し大根、にんじん、薄揚げ、しょうがを加えて、再び煮立てる。",
@@ -240,7 +247,8 @@ const sidedishArr = [
         name: "ひじきの煮物",
         image: "./img/food/sidedish/hijiki.png",
         calories: "67kcal",
-        ingredients: ["ひじき 20g","にんじん 1/2本","薄揚げ 1枚","だし汁 200ml","醤油 大さじ1","みりん 大さじ1","砂糖 小さじ1","塩 少々"],
+        ingredients: ["ひじき 20g","にんじん 1/2本","薄揚げ 1枚","だし汁 200ml"],
+        seasoning:["醤油 大さじ1","みりん 大さじ1","砂糖 小さじ1","塩 少々"],
         recipe: [
             "1 ひじきを30分ほど水に浸けて戻し、ざるにあげる。にんじんは皮を剥いて千切りにし、薄揚げは食べやすい大きさに切る。",
             "2 鍋にだし汁、醤油、みりん、砂糖を入れ、火にかけて煮立たせる。煮立ったら、にんじんと薄揚げを加え、数分煮る。",
@@ -268,7 +276,8 @@ const vegiArr = [
         name: "にんじんしりしり",
         image: "./img/food/vegi/ninjin.png",
         calories: "42kcal",
-        ingredients: ["にんじん 1本","しょうゆ 小さじ1","みりん 小さじ1","酢 小さじ1","砂糖 小さじ1/2","ごま油 適量","ごま 適量"],
+        ingredients: ["にんじん 1本","ごま 適量"],
+        seasoning:["しょうゆ 小さじ1","みりん 小さじ1","酢 小さじ1","砂糖 小さじ1/2","ごま油 適量"],
         recipe: [
             "1 にんじんは皮をむき、千切りにする。ボウルに入れ、しょうゆ、みりん、酢、砂糖を加えてよく混ぜ、10分ほど漬ける。",
             "2 フライパンにごま油を適量入れ、中火で熱する。にんじんを水気を切って加え、炒める。",
@@ -293,7 +302,8 @@ const vegiArr = [
         name: "ピーマン炒め",
         image: "./img/food/vegi/greenpepar.png",
         calories: "36kcal",
-        ingredients: ["ピーマン 2個","オリーブオイル 大さじ1","しょうゆ 大さじ１","塩少々"," 鷹の爪（あれば）"],
+        ingredients: ["ピーマン 2個"],
+        seasoning:["オリーブオイル 大さじ1","しょうゆ 大さじ１","塩少々"," 鷹の爪（あれば）"],
         recipe: [
             "1 ピーマンは種とヘタを取り除き、食べやすい大きさに切る。",
             "2 フライパンにオリーブオイルを熱し、鷹の爪を入れる。ピーマンを加えて炒める。",
@@ -318,7 +328,8 @@ const vegiArr = [
         name: "小松菜のナムル",
         image: "./img/food/vegi/komatsuna.png",
         calories: "62kcal",
-        ingredients: ["小松菜 1/2束"," 酒 小さじ1","ごま油 大さじ1","すりおろしにんにく 小さじ1/2","すりおろししょうが 小さじ1/2","しょうゆ 小さじ1","砂糖 小さじ1/2","ごま 適量"],
+        ingredients: ["小松菜 1/2束","すりおろしにんにく 小さじ1/2","すりおろししょうが 小さじ1/2","ごま 適量"],
+        seasoning:[" 酒 小さじ1","ごま油 大さじ1","しょうゆ 小さじ1","砂糖 小さじ1/2"],
         recipe: [
             "1 小松菜は根元を切り落として、食べやすい大きさに切る。鍋に湯を沸かし、酒を加えて小松菜を茹でる。",
             "2 茹で上がった小松菜を水でよく洗い、水気をしっかりと絞る。",
@@ -343,7 +354,8 @@ const vegiArr = [
         name: "ポテトサラダ",
         image: "./img/food/vegi/potato.png",
         calories: "157kcal",
-        ingredients: ["じゃがいも 2個","にんじん 1/4本","きゅうり 1/4本","玉ねぎ 1/4個","ハム 3枚","マヨネーズ 大さじ3","塩 適量","黒こしょう 適量"],
+        ingredients: ["じゃがいも 2個","にんじん 1/4本","きゅうり 1/4本","玉ねぎ 1/4個","ハム 3枚"],
+        seasoning:["マヨネーズ 大さじ3","塩 適量","黒こしょう 適量"],
         recipe: [
             "1 じゃがいもを皮つきのまま、やや大きめに切って鍋に入れ、水をかぶる程度に入れて火にかける。中火で約15分ほど茹で、フォークがスッと通るくらいに柔らかくなったら、ざるに上げて水気を切り、一度冷ましておく。",
             "2 にんじんときゅうりはそれぞれ細切りにする。玉ねぎは薄切りにして水にさらして辛味を抜く。",
@@ -368,7 +380,8 @@ const vegiArr = [
         name: "プチトマトとブロッコリーのサラダ",
         image: "./img/food/vegi/tomatobro.png",
         calories: "28kcal",
-        ingredients: ["プチトマト 10個","ブロッコリー 1/2株","玉ねぎ 1/4個","ツナ缶 1/2個","レモン汁 小さじ2","オリーブオイル 大さじ1","塩 適量","黒こしょう 適量"],
+        ingredients: ["プチトマト 10個","ブロッコリー 1/2株","玉ねぎ 1/4個","ツナ缶 1/2個","レモン汁 小さじ2"],
+        seasoning:["オリーブオイル 大さじ1","塩 適量","黒こしょう 適量"],
         recipe: [
             "1 プチトマトはへたをとり、ブロッコリーは小房に分け、茹でて水にさらし、よく水を切る。",
             "2 玉ねぎは薄切りにして、水にさらしてアクを取る。",
@@ -398,6 +411,7 @@ const riceArr = [
         image: "./img/food/rice/rice2.png",
         calories: "234kcal",
         ingredients: ["米"],
+        seasoning:["none"],
         recipe: [
             "1 米を研ぎ、ざるにあげる。",
             "2 米と同量の水で炊く。"
@@ -422,6 +436,7 @@ const riceArr = [
         image: "./img/food/rice/brownrice.png",
         calories: "228kcal",
         ingredients: ["玄米"],
+        seasoning:["none"],
         recipe: [
             "1 玄米は洗い、水に浸す。",
             "2 米と２倍の重量の水で炊く。"
@@ -446,6 +461,7 @@ const riceArr = [
         image: "./img/food/rice/multigrain.png",
         calories: "228kcal",
         ingredients: ["雑穀米"],
+        seasoning:["none"],
         recipe: [
             "1 雑穀米は洗い、水に浸す。",
             "2 米と同量の水で炊く。"
@@ -467,9 +483,10 @@ const riceArr = [
     },
     {
         name: "豆ごはん",
-        image: "./img/food/rice/multigrain.png",
+        image: "./img/food/rice/beansrice.png",
         calories: "228kcal",
-        ingredients: ["米 2合","えんどう豆 さや付きで150〜200g（正味約75〜100g）","塩 小さじ"],
+        ingredients: ["米 2合","えんどう豆 さや付きで150〜200g"],
+        seasoning:["塩 小さじ"],
         recipe: [
             "1 米は洗い、ざるにあげておく",
             "2 同量の水に塩を溶かし、豆を加えて炊き上げる"
@@ -493,7 +510,8 @@ const riceArr = [
         name: "チキンライス",
         image: "./img/food/rice/chickenrice.png",
         calories: "544kcal",
-        ingredients: ["ごはん (2膳分)","玉ねぎ 1/2個","ピーマン １個","にんじん 1/3個","鶏もも肉 (ウインナーでも可) 60g","酒 小さじ2","サラダ油 大さじ2","ケチャップ 大さじ2","塩こしょう"],
+        ingredients: ["ごはん (2膳分)","玉ねぎ 1/2個","ピーマン １個","にんじん 1/3個","鶏もも肉 (ウインナーでも可) 60g"],
+        seasoning:["酒 小さじ2","サラダ油 大さじ2","ケチャップ 大さじ2","塩こしょう"],
         recipe: [
             "1 玉ねぎ、ピーマン、人参はみじん切り、鶏もも肉は1.5cm角に切り、塩こしょうをふり、酒で漬け込む。",
             "2 フライパンでサラダ油をひき、中火で野菜から炒め、野菜に火が通ったら、鶏肉も炒める。",
@@ -663,23 +681,89 @@ generateBtn.addEventListener("click", () => {
 
 
     //買い物リストを作る
+    //maindish
     const mainDishingredients = maindishArr[randomMainDishimage].ingredients; 
     mainDishingredients.textContent = maindishArr[randomMainDishimage].ingredients
     for (let i=0;i<mainDishingredients.length;i++) {
         ingredientslist.innerHTML += "<li>"+ mainDishingredients[i] +"</li>"
     }
-    console.log(mainDishingredients,"uuuuuuuuu")
+    console.log(mainDishingredients,)
+    // mainDishingredients.style.display = "block";
+
+    //sidedish
+    const sideDishingredients = sidedishArr[randomSideDishimage].ingredients; 
+    sideDishingredients.textContent = sidedishArr[randomSideDishimage].ingredients
+    for (let i=0;i<sideDishingredients.length;i++) {
+        ingredientslist.innerHTML += "<li>"+ sideDishingredients[i] +"</li>"
+    }
+    console.log(sideDishingredients,)
+
+    //vegi
+    const vegiingredients = vegiArr[randomVegiimage].ingredients; 
+    vegiingredients.textContent = vegiArr[randomVegiimage].ingredients
+    for (let i=0;i<vegiingredients.length;i++) {
+        ingredientslist.innerHTML += "<li>"+ vegiingredients[i] +"</li>"
+    }
+    console.log(vegiingredients,)
+
+    //rice
+    const riceingredients = riceArr[randomVegiimage].ingredients; 
+    riceingredients.textContent = riceArr[randomVegiimage].ingredients
+    for (let i=0;i<riceingredients.length;i++) {
+        ingredientslist.innerHTML += "<li>"+ riceingredients[i] +"</li>"
+    }
+    console.log(riceingredients,)
+
+    //表示をクリアにする方法
+    const generateBtn = document.getElementById("generate-btn");
+    const deleteBtn = document.getElementById("delete");
+    const ingredientsList = document.getElementById("ingredients-list");
     
+    generateBtn.addEventListener("click", () => {
+        // ランダムな内容を表示する処理
     
-
-
-    // const test = (chikuwa) => {
-    //  return html = `
-    //     <img src="./img/food/sidedish/${chikuwa}.png" />
-    //   `
-    // } 
-
-    // test(maindishiArr.image)
-
+        // ingredientsListをクリア
+        while (ingredientslist.firstChild) {
+            ingredientslist.removeChild(ingredientslist.firstChild);
+        }
+    
+        // 新しい表示内容を生成
+        // maindish
+        const randomMainDishimage = Math.floor(Math.random() * maindishArr.length);
+        const mainDishingredients = maindishArr[randomMainDishimage].ingredients; 
+        for (let i = 0; i < mainDishingredients.length; i++) {
+            const listItem = document.createElement("li");
+            listItem.textContent = mainDishingredients[i];
+            ingredientslist.appendChild(listItem);
+        }
+    
+        // sidedish
+        const randomSideDishimage = Math.floor(Math.random() * sidedishArr.length);
+        const sideDishingredients = sidedishArr[randomSideDishimage].ingredients; 
+        for (let i = 0; i < sideDishingredients.length; i++) {
+            const listItem = document.createElement("li");
+            listItem.textContent = sideDishingredients[i];
+            ingredientslist.appendChild(listItem);
+        }
+    
+        // vegi
+        const randomVegiimage = Math.floor(Math.random() * vegiArr.length);
+        const vegiingredients = vegiArr[randomVegiimage].ingredients; 
+        for (let i = 0; i < vegiingredients.length; i++) {
+            const listItem = document.createElement("li");
+            listItem.textContent = vegiingredients[i];
+            ingredientslist.appendChild(listItem);
+        }
+    
+        // rice
+        const randomRiceimage = Math.floor(Math.random() * riceArr.length);
+        const riceingredients = riceArr[randomRiceimage].ingredients; 
+        for (let i = 0; i < riceingredients.length; i++) {
+            const listItem = document.createElement("li");
+            listItem.textContent = riceingredients[i];
+            ingredientslist.appendChild(listItem);
+        }
+    });
+    
 
 });
