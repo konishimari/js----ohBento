@@ -1,176 +1,162 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="js/jquery-2.1.3.min.js"></script> -->
-    <title>お弁当アプリ</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <title>お弁当アプリ</title>
+  <link rel="stylesheet" href="./css/style.css">
 
 </head>
+
 <body>
   <header>
-    <img class="header-image"  src="./img/mat-s.png"></img>
-    <h1 class="header-image-title">o&nbsp;b&nbsp;e&nbsp;n&nbsp;t&nbsp;o&nbsp;-&nbsp;a&nbsp;p&nbsp;p</h1> 
+    <img class="header-image" src="./img/mat-s.png"></img>
+    <h1 class="header-image-title">o&nbsp;b&nbsp;e&nbsp;n&nbsp;t&nbsp;o&nbsp;-&nbsp;a&nbsp;p&nbsp;p</h1>
   </header>
-    <div class="container">
-      <div class="cover-image" >
-        <img class="cover-food" src="./img/title-image.png" alt="お弁当アプリ表紙">
-      </div>
-      <img class="cover-bottom-image" src="./img/mat-s.png"></img>
-        <div class="introduction">
-          <h3 class="introduction-text">
-            ＜このアプリについて＞<br>
-            人気のおかずを揃えました。<br>
-            お弁当の献立は感覚で選ぶ。<br>
-            生成されたお弁当を見て<br>
-            おいしそう！そう感じたものを<br>
-            チェックするだけ。<br>
-            迷わないし悩まない。<br>
-            バリエーションはアプリが考えます。<br>
-            チェックしたお弁当の食材は5日分まで<br>
-            まとめて買い物リストにすることができます！<br>
-            もちろん、栄養素計算も。<br>
-            さあ、たのしいお弁当ライフをはじめましょう。
-          </h3>
-        </div>
-      <div class="generate-area">
-        <div id="lunch-box">
-          <div id="left">
-            <div id="main-dish" >
-              <img class="main-dish-image" src="./img/food/maindish/karaage2.png" alt="唐揚げ">
-            </div>
-            <div id="left-bottom">
-              <div id="vegi">
-                <img class="vegi-image" src="./img/food/vegi/greenpepar.png" alt="ピーマンの炒め物">
-              </div>
-              <div id="side-dish">
-                <img class="side-dish-image" src="./img/food/sidedish/chikuwa.png" alt="ちくわの照り焼き">   
-              </div>  
-            </div>  
-          </div>
-          <div id="rice">
-            <img  class="rice-image" src="./img/food/rice/beansrice.png" alt="豆ごはん">
-          </div>
-        </div>
-      </div>   
-      <!-- お弁当生成させる -->
-      <div id="result">
-        <h2>このお弁当にしますか</h2>
-        <div id="main-dish-result"></div>
-        <div id="side-dish-result"></div>
-        <div id="vegi-result"></div>
-        <div id="rice-result"></div>
+  <div class="container">
+    <div class="cover-image">
+      <img class="cover-food" src="./img/2-1.png" alt="お弁当アプリ表紙">
     </div>
+    <img class="cover-bottom-image" src="./img/mat-s.png"></img>
+    <div class="introduction">
+      <h3 class="introduction-text">
+        ＜このアプリについて＞<br>
+        人気のおかずを揃えました。<br>
+        お弁当の献立は感覚で選ぶ!<br>
+        生成されたお弁当を見て<br>
+        ”おいしそう♡”と感じたものを<br>
+        チェックするだけ。<br>
+        迷わないし悩まない。<br>
+        バリエーションはアプリが考えます。<br>
+        チェックしたお弁当の食材は5日分まで<br>
+        まとめて買い物リストにすることができます！<br>
+        もちろん、栄養素計算も。<br>
+        さあ、たのしいお弁当ライフをはじめましょう。
+      </h3>
+    </div>
+    <div class="generate-area">
+
+      <div id="lunch-box">
+        <div id="left">
+          <div id="main-dish">
+            <img id="main-dish-image" src="./img/food/maindish/karaage2.png" alt="唐揚げ">
+            <!-- <img class="main-dish-image" src="./img/food/maindish/shake1.png" alt="">
+              <img class="main-dish-image" src="./img/food/maindish/pork2.png" alt="">
+              <img class="main-dish-image" src="./img/food/maindish/hamburg.png" alt="">
+              <img class="main-dish-image" src="./img/food/maindish/meatandvegi2.png" alt=""> -->
+          </div>
+          <div id="left-bottom">
+            <div id="vegi">
+              <img id="vegi-image" src="./img/food/vegi/greenpepar.png" alt="ピーマンの炒め物">
+            </div>
+            <div id="side-dish">
+              <img id="side-dish-image"  src="./img/food/sidedish/chikuwa.png" alt="ちくわの照り焼き">
+            </div>
+          </div>
+        </div>
+        <div id="rice">
+          <img id="rice-image" src="./img/food/rice/beansrice.png" alt="豆ごはん">
+        </div>
+      </div>
+    </div>
+    <!-- お弁当生成させる -->
+    <div id="result">
+      <div class = "calorie-area">
+        <p id="total-calories">calories</p>
+      </div>
+      <h2 class="question">
+        どんなお弁当にしますか<br>
+        ボタンを押してみよう！
+      </h2>
+      <div id="main-dish-result"></div>
+      <div id="side-dish-result"></div>
+      <div id="vegi-result"></div>
+      <div id="rice-result"></div>
+    </div>
+    <div class="try-area">
       <button id="generate-btn">お弁当シャッフル</button>
     </div>
-    <!-- リストの表示 -->
-    <div class="category" id="main-dish">
-      <h2>主菜</h2>
-      <ul>
-        <li>鶏の唐揚げ</li>
-        <li>鮭の塩焼き</li>
-        <li>豚の生姜焼き</li>
-        <li>ハンバーグ</li>
-        <li>肉野菜炒め</li>
-      </ul>
-    </div>
-    <div class="category" id="side-dish">
-      <h2>副菜</h2>
-      <ul>
-        <li>きんぴらごぼう</li>
-        <li>ちくわの照り焼き</li>
-        <li>切り干し大根の煮物</li>
-        <li>卵焼き</li>
-        <li>ひじき煮</li>
-      </ul>
-    </div>
-    <div class="category" id="vegi">
-      <h2>野菜</h2>
-      <ul>
-        <li>にんじんしりしり</li>
-        <li>ピーマン炒め</li>
-        <li>小松菜のナムル</li>
-        <li>ポテトサラダ</li>
-        <li>トマトとブロッコリー</li>
-      </ul>
-    </div>
-    <div class="category" id="rice">
-      <h2>ごはん</h2>
-      <ul>
-        <li>白米</li>
-        <li>玄米</li>
-        <li>五穀米</li>
-        <li>豆ごはん</li>
-        <li>チキンライス</li>
-      </ul>
-    </div>
-    <!-- <script src="app.js"></script> -->
-  </body>
+  </div>
+  <!-- リストの表示 -->
+  <div class="category" id="main-dish-text">
+    <h3>主菜 maindish</h3>
+    <p id="main-dish-name"></p>
+    <ul id="main-dish-list">
+      <li>鶏の唐揚げ</li>
+      <li>鮭の塩焼き</li>
+      <li>豚の生姜焼き</li>
+      <li>ハンバーグ</li>
+      <li>肉野菜炒め</li>
+    </ul>
+  </div>
+  <div class="category" id="side-dish-text">
+    <h3>副菜 sidedish</h3>
+    <p id="side-dish-name"></p>
+    <ul id="side-dish-list">
+      <li>きんぴらごぼう</li>
+      <li>ちくわの照り焼き</li>
+      <li>切り干し大根の煮物</li>
+      <li>卵焼き</li>
+      <li>ひじき煮</li>
+    </ul>
+  </div>
+  <div class="category" id="vegi-text">
+    <h3>野菜 vegitable</h3>
+    <p id="vegi-name"></p>
+    <ul id="vegi-list">
+      <li>にんじんしりしり</li>
+      <li>ピーマン炒め</li>
+      <li>小松菜のナムル</li>
+      <li>ポテトサラダ</li>
+      <li>プチトマトとブロッコリーのサラダ</li>
+    </ul>
+  </div>
+  <div class="category" id="rice-text">
+    <h3>ごはん rice</h3>
+    <p id="rice-name"></p>
+    <ul id="rice-list">
+      <li>白米</li>
+      <li>玄米</li>
+      <li>五穀米</li>
+      <li>豆ごはん</li>
+      <li>チキンライス</li>
+    </ul>
+  </div>
 
-  <script>
-    const riceArr = [
-    name:"鶏の唐揚げ（135g）",
-    img:<img srf="./img/food/maindish/karaage2.png"></img>,
-    calories:"306kcal",
-    ingredients:{"鶏もも肉120g","生姜","片栗粉","醤油","酒","レモン","油"},
-    recipe:{ 2人分 鶏もも肉 500g,",
-    }
-    nutrition:{
-      炭水化物:6.6g,
-      たんぱく質:23.4g,
-      脂質:20.7g,
-      ビタミンA:54μ,
-      ビタミンB1:0.15mg,
-      ビタミンB2:0.23mg,
-      ビタミンE:1.2mg,
-      カルシウム:11mg,
-      鉄:1.1mg,
-      食物繊維:0.2g,
-      飽和脂肪酸:6.02g,
-      塩分:1.5g,
-      }
+  <div class="nutrition">
+    <dl>
+      <input id=“nutrition” type="checkbox">
+      <label for=“nutrition”>
+          <dt>
+            <p>栄養素表示</p>
+          </dt>
+      </label>
+      <dd>
+        <p></p>
+      </dd>
+  </dl>
+  </div>
 
-        // {
-        // name:"白米",
-        // Image: src="./img/food/rice/beansrice.png",
-        // calories:"",
-        // ingredients:"米",
-        // recipe:{
-        // },
-        // nutrition:{
-        //     protain:"#",
-        //     carbohydrate:"#",
-        //     vitamin:"#",
-        // },        
-        // },
-    ];    
-    
-    const mainDishList = ["鶏の唐揚げ", "鮭の塩焼き", "豚の生姜焼き", "ハンバーグ", "肉野菜炒め"];
-    const sideDishList = ["きんぴらごぼう", "ちくわの照り焼き", "切り干し大根の煮物", "卵焼き", "ひじき煮"];
-    const vegiList = ["にんじんしりしり", "ピーマン炒め","小松菜のナムル", "ポテトサラダ", "トマトとブロッコリー"];
-    const riceList = ["白米", "玄米", "雑穀米", "豆ごはん", "チキンライス"];
+  <div class="ingredients-area">
+    <dl>
+        <input id=“ingredients” type="checkbox">
+        <label for=“ingredients”>
+            <dt>
+              <p>買い物リスト</p>
+            </dt>
+        </label>
+        <dd class="ingredients-list">
+          <ul class="ingredients-text" id="ingredientslist">  
+          </ul>
+          <!-- <img class="ingredients-item" src="./img/kaimonolist-back.png" alt="買い物リスト"> -->
+        </dd>
+    </dl>
+  </div>
+  <script src="js/app.js"></script>
 
-    const mainDishResult = document.getElementById("main-dish-result");
-    const sideDishResult = document.getElementById("side-dish-result");
-    const vegiResult = document.getElementById("vegi-result");
-    const riceResult = document.getElementById("rice-result");
+</body>
 
-    const generateBtn = document.getElementById("generate-btn");
-
-  
- 
-    generateBtn.addEventListener("click", () => {
-    const randomRice = riceList[Math.floor(Math.random() * riceList.length)];
-    const randomMainDish = mainDishList[Math.floor(Math.random() * mainDishList.length)];
-    const randomSideDish = sideDishList[Math.floor(Math.random() * sideDishList.length)];
-    const randomVegi = vegiList[Math.floor(Math.random() * vegiList.length)];
-
-    riceResult.textContent = randomRice;
-    mainDishResult.textContent = randomMainDish;
-    sideDishResult.textContent = randomSideDish;
-    vegiResult.textContent = randomVegi;
-});
-  </script>
 </html>
