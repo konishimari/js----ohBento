@@ -31,7 +31,7 @@
         チェックするだけ。<br>
         迷わないし悩まない。<br>
         バリエーションはアプリが考えます。<br>
-        チェックしたお弁当の食材は5日分まで<br>
+        チェックしたお弁当の食材は<br>
         まとめて買い物リストにすることができます！<br>
         もちろん、栄養素計算も。<br>
         さあ、たのしいお弁当ライフをはじめましょう。
@@ -82,7 +82,7 @@
   </div>
   <!-- リストの表示 -->
   <div class="category" id="main-dish-text">
-    <h3>主菜 maindish</h3>
+    <h3>主菜 maindish ____________________</h3>
     <p id="main-dish-name"></p>
     <ul id="main-dish-list">
       <li>鶏の唐揚げ</li>
@@ -93,7 +93,7 @@
     </ul>
   </div>
   <div class="category" id="side-dish-text">
-    <h3>副菜 sidedish</h3>
+    <h3>副菜 sidedish ____________________</h3>
     <p id="side-dish-name"></p>
     <ul id="side-dish-list">
       <li>きんぴらごぼう</li>
@@ -104,7 +104,7 @@
     </ul>
   </div>
   <div class="category" id="vegi-text">
-    <h3>野菜 vegitable</h3>
+    <h3>野菜 vegitable ____________________</h3>
     <p id="vegi-name"></p>
     <ul id="vegi-list">
       <li>にんじんしりしり</li>
@@ -115,7 +115,7 @@
     </ul>
   </div>
   <div class="category" id="rice-text">
-    <h3>ごはん rice</h3>
+    <h3>ごはん rice _______________________</h3>
     <p id="rice-name"></p>
     <ul id="rice-list">
       <li>白米</li>
@@ -126,7 +126,7 @@
     </ul>
   </div>
 
-  <div class="nutrition">
+  <div class="nutrition-area">
     <dl>
       <input id=“nutrition” type="checkbox">
       <label for=“nutrition”>
@@ -134,8 +134,10 @@
             <p>栄養素表示</p>
           </dt>
       </label>
-      <dd>
-        <p></p>
+      <dd class="nutrition-list">
+        <ul class="nutrition-text" id="nutrition-list">
+
+        </ul>
       </dd>
   </dl>
   </div>
@@ -154,6 +156,9 @@
           <!-- <img class="ingredients-item" src="./img/kaimonolist-back.png" alt="買い物リスト"> -->
         </dd>
     </dl>
+  </div>
+  <div class="footer">
+    <p>©︎Good Morning lab - Oh! Bento app</p>
   </div>
   <script src="js/app.js"></script>
 

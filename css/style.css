@@ -173,18 +173,18 @@ header{
     cursor: pointer;
     text-decoration: none; /* 文字の下線を消す */
     margin: 50px;
-  }
+}
 /* クリック時 */
 #generate-btn:active {
     box-shadow: none;
     transform: translateY(5px);
-  }
+}
 
-.nutrition{
+.nutrition-area{
     font-size: 18px;
     font-weight: bold;
     color: #fff;
-    margin: 10px;
+    margin: 80px 10px 10px 10px;
 }
 .ingredients-area{
     font-size: 18px;
@@ -267,10 +267,25 @@ dt::after {
 dl>input:checked+label>dt::after {
     transform: translateY(-50%) rotate(180deg);
 }
+.nutrition-list{
+    width: 100%;
+    background-image: url(../img/check-yellow-flame.png);
+    background-size: 100%;
+    background-position: center;
+    height: 600px;
+    font-size: 16px;
+    color: black;
+    font-display: center;
+}
+.nutrition-text{
+    position: relative;
+    top: 85px;
+    left: 45px;
+}
 
 .ingredients-list{
     width: 100%;
-    background-image: url("../img/kaimonolist-background.png");
+    background-image: url(../img/kaimonolist-background.png);
     background-size: 100%;
     background-position: center;
     height:600px;
@@ -281,5 +296,10 @@ dl>input:checked+label>dt::after {
 .ingredients-text{
     position: relative;
     top: 85px;
-    left: 45px;
+    left: 40px;
+}
+.footer{
+    color:darkgrey;
+    font-size: 11px;
+    text-align: center;
 }

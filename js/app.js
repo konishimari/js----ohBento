@@ -221,7 +221,8 @@ const sidedishArr = [
         name: "卵焼き",
         image: "./img/food/sidedish/egg2.png",
         calories: "120kcal",
-        ingredients: ["卵 2個","だし汁 1/2カップ","醤油 小さじ1","砂糖 小さじ1/2","サラダ油 適量"],
+        ingredients: ["卵 2個","だし汁 1/2カップ","サラダ油 適量"],
+        seasoning:["醤油 小さじ1","砂糖 小さじ1/2"],
         recipe: [
             "1 ボウルに卵を割り入れ、だし汁、醤油、みりん、砂糖を加え、よく混ぜる。",
             "2 卵焼き器やフライパンにサラダ油を薄くひき、中火で熱する。熱くなったら、卵液を流し入れる。",
@@ -510,7 +511,7 @@ const riceArr = [
         name: "チキンライス",
         image: "./img/food/rice/chickenrice.png",
         calories: "544kcal",
-        ingredients: ["ごはん (2膳分)","玉ねぎ 1/2個","ピーマン １個","にんじん 1/3個","鶏もも肉 (ウインナーでも可) 60g"],
+        ingredients: ["ごはん (2膳分)","玉ねぎ 1/2個","ピーマン １個","にんじん 1/3個","鶏もも肉 (ウインナーでも) 60g"],
         seasoning:["酒 小さじ2","サラダ油 大さじ2","ケチャップ 大さじ2","塩こしょう"],
         recipe: [
             "1 玉ねぎ、ピーマン、人参はみじん切り、鶏もも肉は1.5cm角に切り、塩こしょうをふり、酒で漬け込む。",
@@ -564,7 +565,11 @@ const ricename = document.getElementById("rice-name");
 
 const totalCalories = document.getElementById("total-calories")
 
+const nutritionlist = document.getElementById("nutritionlist")
+
 const ingredientslist = document.getElementById("ingredientslist")
+
+
 
 
 generateBtn.addEventListener("click", () => {
@@ -680,14 +685,27 @@ generateBtn.addEventListener("click", () => {
     ricelist.innerHTML = riceRecipe.join('');
 
 
+
+    // //栄養素の表示をする
+    // //maindish
+    // const mainDishnutrition = maindishArr[randomMainDishimage].nutrition;
+    // nutritionlist.innerHTML = ""
+    // mainDishnutrition.textContent = maindishArr[randomMainDishimage].nutrition
+    
+    // console.log(mainDishnutrition,"kkkkkkkkkk")
+
+
+
+
     //買い物リストを作る
     //maindish
-    const mainDishingredients = maindishArr[randomMainDishimage].ingredients; 
+    const mainDishingredients = maindishArr[randomMainDishimage].ingredients;
+    ingredientslist.innerHTML =  ""
     mainDishingredients.textContent = maindishArr[randomMainDishimage].ingredients
-    for (let i=0;i<mainDishingredients.length;i++) {
+    for (let i=0; i<mainDishingredients.length; i++) {
         ingredientslist.innerHTML += "<li>"+ mainDishingredients[i] +"</li>"
     }
-    console.log(mainDishingredients,)
+    console.log(mainDishingredients,"pppppppppp")
     // mainDishingredients.style.display = "block";
 
     //sidedish
@@ -714,56 +732,5 @@ generateBtn.addEventListener("click", () => {
     }
     console.log(riceingredients,)
 
-    //表示をクリアにする方法
-    const generateBtn = document.getElementById("generate-btn");
-    const deleteBtn = document.getElementById("delete");
-    const ingredientsList = document.getElementById("ingredients-list");
-    
-    generateBtn.addEventListener("click", () => {
-        // ランダムな内容を表示する処理
-    
-        // ingredientsListをクリア
-        while (ingredientslist.firstChild) {
-            ingredientslist.removeChild(ingredientslist.firstChild);
-        }
-    
-        // 新しい表示内容を生成
-        // maindish
-        const randomMainDishimage = Math.floor(Math.random() * maindishArr.length);
-        const mainDishingredients = maindishArr[randomMainDishimage].ingredients; 
-        for (let i = 0; i < mainDishingredients.length; i++) {
-            const listItem = document.createElement("li");
-            listItem.textContent = mainDishingredients[i];
-            ingredientslist.appendChild(listItem);
-        }
-    
-        // sidedish
-        const randomSideDishimage = Math.floor(Math.random() * sidedishArr.length);
-        const sideDishingredients = sidedishArr[randomSideDishimage].ingredients; 
-        for (let i = 0; i < sideDishingredients.length; i++) {
-            const listItem = document.createElement("li");
-            listItem.textContent = sideDishingredients[i];
-            ingredientslist.appendChild(listItem);
-        }
-    
-        // vegi
-        const randomVegiimage = Math.floor(Math.random() * vegiArr.length);
-        const vegiingredients = vegiArr[randomVegiimage].ingredients; 
-        for (let i = 0; i < vegiingredients.length; i++) {
-            const listItem = document.createElement("li");
-            listItem.textContent = vegiingredients[i];
-            ingredientslist.appendChild(listItem);
-        }
-    
-        // rice
-        const randomRiceimage = Math.floor(Math.random() * riceArr.length);
-        const riceingredients = riceArr[randomRiceimage].ingredients; 
-        for (let i = 0; i < riceingredients.length; i++) {
-            const listItem = document.createElement("li");
-            listItem.textContent = riceingredients[i];
-            ingredientslist.appendChild(listItem);
-        }
-    });
-    
 
 });
